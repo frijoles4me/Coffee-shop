@@ -1,21 +1,21 @@
 import React, { Component } from "react";
-import { Navbar } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Navigation from "./components/navbar";
-
+import Body from "./components/body";
+import "./App.css";
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Router>
-          <Navigation />
+          <div>
+            <Navigation />
+          </div>
         </Router>
+
         <div className="container">
-          <header className="App-header">
-            <h1 className="App-title">Welcome to Coffee Shop</h1>
-          </header>
-          <p className="App-intro">Good times start with great coffee</p>
+          <Body />
         </div>
       </div>
     );
