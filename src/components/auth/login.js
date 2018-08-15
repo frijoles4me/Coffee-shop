@@ -1,27 +1,15 @@
 import React, { Component } from "react";
 
-export default class Register extends Component {
+export default class Login extends Component {
   render() {
     return (
       <div className="container">
         <div>
-          <h2 className="text-center col-xs-6 col-xs-offset-3">Sign Up</h2>
-          <p className="lead text-center col-xs-6 col-xs-offset-3">
-            Register for daily deals
-          </p>
+          <h2 className="text-center col-xs-5 col-xs-offset-3">Login</h2>
           <form className="center-block">
+            <div className="row" />
             <div className="row">
-              <div className="form-group col-xs-6 col-xs-offset-3">
-                <input
-                  type="email"
-                  className="form-control"
-                  id="exampleInputEmail1"
-                  placeholder="Name"
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="form-group col-xs-6 col-xs-offset-3">
+              <div className="form-group col-xs-5 col-xs-offset-3">
                 <input
                   type="email"
                   className="form-control"
@@ -31,22 +19,12 @@ export default class Register extends Component {
               </div>
             </div>
             <div className="row">
-              <div className="form-group col-xs-6 col-xs-offset-3">
+              <div className="form-group col-xs-5 col-xs-offset-3">
                 <input
                   type="password"
                   className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Password"
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="form-group col-xs-6 col-xs-offset-3">
-                <input
-                  type="password"
-                  className="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Confirm password"
                 />
               </div>
             </div>

@@ -21,14 +21,16 @@ export default class Navigation extends Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <NavItem eventKey={1} to="#">
-              Link
+            <NavItem eventKey={1} href="Shop">
+              Shop
             </NavItem>
             <NavItem eventKey={2} to="#">
               Link
             </NavItem>
             <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1}>Action</MenuItem>
+              <MenuItem eventKey={3.1} href="/contacts">
+                Contact Us
+              </MenuItem>
               <MenuItem eventKey={3.2}>Another action</MenuItem>
               <MenuItem eventKey={3.3}>Something else here</MenuItem>
               <MenuItem divider />
@@ -36,7 +38,7 @@ export default class Navigation extends Component {
             </NavDropdown>
           </Nav>
           <Nav pullRight>
-            <NavItem eventKey={1} to="login">
+            <NavItem eventKey={1} href="/login">
               Login
             </NavItem>
             <NavItem eventKey={2} href="/register">
