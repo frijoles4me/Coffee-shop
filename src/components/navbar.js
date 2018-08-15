@@ -15,7 +15,7 @@ export default class Navigation extends Component {
       <Navbar collapseOnSelect style={styles} bsStyle="inverse">
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="#brand">React-Bootstrap</Link>
+            <Link to="/">Coffee Shop</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -36,11 +36,11 @@ export default class Navigation extends Component {
             </NavDropdown>
           </Nav>
           <Nav pullRight>
-            <NavItem eventKey={1} to="#">
-              Link Right
+            <NavItem eventKey={1} to="login">
+              Login
             </NavItem>
-            <NavItem eventKey={2} to="#">
-              Link Right
+            <NavItem eventKey={2} href="/register">
+              Register
             </NavItem>
           </Nav>
         </Navbar.Collapse>

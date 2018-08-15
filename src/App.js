@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Register from "./components/auth/register";
 
 import Navigation from "./components/navbar";
 import Body from "./components/body";
@@ -11,12 +12,10 @@ class App extends Component {
         <Router>
           <div>
             <Navigation />
+            <Route exact path="/" component={Body} />
+            <Route exact path="/register" component={Register} />
           </div>
         </Router>
-
-        <div className="container">
-          <Body />
-        </div>
       </div>
     );
   }
